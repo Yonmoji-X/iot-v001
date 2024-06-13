@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" href="./css/style.css">
+<title>ラズパイ遠隔操作</title>
+
+</head>
+<body>
+
+<!-- コンテンツ表示画面 -->
+<header>header</header>
+<div class="flex-div">
+    <nav>【ラズパイ管理画面】
+
+        <div>
+            <div> ラスパイ名称：<input type="text" id="raspName"> </div>
+            <div> ラスパイID：<input type="text" id="raspId"> </div>
+            <div>
+                <textarea id="raspText" cols="30" rows="10"></textarea>
+                <button id="addRaspButton">追加</button>
+            </div>
+            <div id="raspberryPi_list_parent" style="overflow: auto; height: 450px;"></div>
+        </div>
+
+    </nav>
+    <main>【観測データ】
+        <div id="data_selector">
+            <select name="" id="meas_select"></select>
+            <button id="meas_btn">データを見る</button>
+        </div>
+            <!-- <div id='mytable'>
+                <table>
+                    <tr>
+                        <th>＼</th>
+                        <th>観測気温</th>
+                        <th>観測室温</th>
+                        <th>API天気</th>
+                        <th>API気温</th>
+                        <th>API湿度</th>
+                    </tr>
+                    <tr>
+                        <th>A</th>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <th>B</th>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                        <td>9</td>
+                    </tr>
+                </table>
+            </div> -->
+            <div id="sensResult" style="overflow: auto; height: 550px;"></div>
+    </main>
+    <aside>【メモ】
+        <div>
+            <div> 名前：<input type="text" id="uname"> </div>
+            <div>
+                <textarea id="text" cols="30" rows="10"></textarea>
+                <button id="send">送信</button>
+            </div>
+            <div id="output" style="overflow: auto; height: 500px;"></div>
+        </div>
+
+    </aside>
+</div>
+<footer>footer</footer>
+
+<!-- <button id="#addRaspButton">追加</button> -->
+<!-- <button id="offButton">Off</button> -->
+
+
+
+<!-- JQuery -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!-- JQuery -->
+
+<!--** 以下Firebase **-->
+<script type="module" src="./js/main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
